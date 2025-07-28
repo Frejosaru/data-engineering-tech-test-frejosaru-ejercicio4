@@ -1,0 +1,5 @@
+Extensión a Snowflake
+
+Separar dim_geo(country, city, region, …) de dim_customer y dim_merchant
+
+dim_payment_method → normalizar a dim_card_brand, dim_auth_type, etc., si aplica

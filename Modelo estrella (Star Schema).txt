@@ -1,0 +1,29 @@
+Tabla de hechos
+
+fact_transactions
+
+Dimensiones
+
+dim_customer
+
+dim_merchant
+
+dim_date (role-playing date para transaction_ts)
+
+dim_payment_method
+
+dim_currency (opcional si quieres controlar tipos de cambio)
+
+dim_geo (puedes snowflakear country/city)
+
+Diagrama lógico (simplificado)
+markdown
+Copiar
+Editar
+                  dim_date
+                     ▲
+                     │ (date_key)
+ dim_customer   dim_merchant   dim_payment_method   dim_currency   dim_geo
+      ▲              ▲                 ▲                 ▲             ▲
+      └──────────────┴─────────────────┴─────────────────┴─────────────┘
+                               fact_transactions

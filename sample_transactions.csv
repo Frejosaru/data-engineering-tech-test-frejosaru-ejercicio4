@@ -1,0 +1,12 @@
+transaction_id          (string/int)
+customer_id             (string/int)
+merchant_id             (string/int)
+transaction_ts          (timestamp)
+amount                  (numeric)
+currency                (string)
+status                  (string)        -- approved, declined, refunded, ...
+country                 (string)        -- país del cliente o del comercio
+city                    (string)
+payment_method          (string)        -- card, cash, transfer, ...
+card_type               (string)        -- visa, mastercard, ...
+category                (string)        -- categoría del comercio
